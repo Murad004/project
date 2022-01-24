@@ -43,13 +43,13 @@ namespace project.ViewModels
                     //HelperClass.clientDict.Add(client, user);
                     string json = JsonConvert.SerializeObject(user);
 
-                    if (File.Exists(@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\1.json"))
+                    if (File.Exists(@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\1.json"))
                     {
-                        File.WriteAllText(@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\1.json", json);
+                        File.WriteAllText(@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\1.json", json);
                     }
                     else
                     {
-                        File.WriteAllText(@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\1.json", json);
+                        File.WriteAllText(@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\1.json", json);
 
                     }
                     //string json = JsonConvert.SerializeObject(HelperClass.clientDict);
@@ -83,7 +83,7 @@ namespace project.ViewModels
                     open.ShowDialog();
                     //Text = PdfHelper.ReadPdfFile(open.FileName);
                     ImagePath = open.FileName;
-                    fillProfileUserControl.img.ImageSource = new BitmapImage(new Uri(ImagePath));
+                    //fillProfileUserControl.img.ImageSource = new BitmapImage(new Uri(ImagePath));
 
                     //mainWindow.image1.Source = new BitmapImage(new Uri(open.FileName));
 

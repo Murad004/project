@@ -7,21 +7,21 @@
              xmlns:local="clr-namespace:project.Views"
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="600">
-    <Grid Background="wHITE" Name="MainGrid">
+    <Grid Background="Black" Name="MainGrid">
         <StackPanel>
             <WrapPanel >
                 <TextBlock Text="Verify" Foreground="Green" FontWeight="SemiBold" FontSize="25" Margin="180,30,0,0"></TextBlock>
                 <TextBlock Name="VerifyNumbertxt"  Foreground="Green" FontWeight="SemiBold" FontSize="25" Margin="60,30,0,0"></TextBlock>
 
             </WrapPanel>
-            <TextBlock Text="Waiting to automatically dedect an SMS sent to  " Foreground="Black" FontWeight="SemiBold" FontSize="19" Margin="100,30,0,0"></TextBlock>
+            <TextBlock Text="Waiting to automatically dedect an SMS sent to  " Foreground="White" FontWeight="SemiBold" FontSize="19" Margin="100,30,0,0"></TextBlock>
             <TextBlock x:Name="VerifyNumbertxt2" Foreground="Black" FontWeight="SemiBold" FontSize="19" Margin="100,20,0,0"></TextBlock>
 
             <TextBox Name="CodeTextBox" Margin="0,40,0,0" HorizontalAlignment="Center" Width="300" Height="50" ></TextBox>
             <Line materialDesign:ButtonAssist.CornerRadius="6"  Margin="0,10,0,0" HorizontalAlignment="Center" X1="400" ></Line>
-            <TextBlock HorizontalAlignment="Center" FontSize="19" Text="Enter 6-digit code "></TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontSize="19" Foreground="White" Text="Enter 6-digit code "></TextBlock>
 
-            <Button Command="{Binding SendBtnCommand}" Style="{StaticResource InformButton}" Width="250" Height="50" Margin="0,100,0,0" Content="Send" FontSize="20" ></Button>
+            <Button Command="{Binding SendBtnCommand}" Style="{StaticResource InformButton}" Width="250" Height="50" Margin="0,300,0,0" Content="Send" FontSize="20" ></Button>
 
         </StackPanel>
     </Grid>

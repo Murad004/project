@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace project.ViewModels
 {
@@ -18,16 +19,10 @@ namespace project.ViewModels
             verifyNumberUserControl.VerifyNumbertxt2.Text = HelperClass.User.PhoneNumber;
             SendBtnCommand = new RelayCommand((sender) =>
             {
-                //if (verifyNumberUserControl.CodeTextBox.Text == VerifyCode)
-                //{
+            
                 FillProfileUserControl fillProfileUserControl = new FillProfileUserControl();
                 verifyNumberUserControl.MainGrid.Children.Add(fillProfileUserControl);
-
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Wrong Code.Try Again");
-                //}
+                
 
 
             });

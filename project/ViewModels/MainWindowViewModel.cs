@@ -87,13 +87,13 @@ namespace project.ViewModels
         {
             try
             {
-                if (new FileInfo(@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\Messages.txt").Length == 0)
+                if (new FileInfo(@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\Messages.txt").Length == 0)
                 {
 
                 }
                 else
                 {
-                    MainWindow.Listbox.Items.Add(new User { Name = "UnknownUser", ImagePath = "../Images/usericon.png" });
+                    MainWindow.Listbox.Items.Add(new User { Name = "Cavid", ImagePath = "../Images/usericon.png" });
                     dispatcherTimer.Stop();
                 }
             }

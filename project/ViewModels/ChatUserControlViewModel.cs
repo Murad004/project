@@ -18,7 +18,7 @@ using System.Windows.Threading;
 
 namespace project.ViewModels
 {
-    public class ChatUserControlViewModel:BaseViewModel
+    public class ChatUserControlViewModel : BaseViewModel
     {
         public RelayCommand SendBtnCommand { get; set; }
         public RelayCommand MultiFunctionallyButton { get; set; }
@@ -40,6 +40,22 @@ namespace project.ViewModels
         public string VoicePath { get; set; }
         public ChatUserControlViewModel(ChatUserControl chatUserControl)
         {
+
+            try
+            {
+                App.Current.Dispatcher.Invoke(() =>
+                {
+
+
+                    chatUserControl.Username.Text = "Cavid";
+                    chatUserControl.UserImg.Source = new BitmapImage(new Uri("../Images/usericon.png"));
+                });
+
+            }
+            catch (Exception ex)
+            {
+
+            }
             DispatcherTimer.Interval = TimeSpan.FromSeconds(1);
             DispatcherTimer.Tick += DispatcherTimer_Tick;
 
@@ -96,7 +112,7 @@ namespace project.ViewModels
                                     chatUserControl.MessageTxtBox.Text = null;
                                     chatUserControl.HorizontalAlignment = HorizontalAlignment.Left;
                                     chatUserControl.ChatListBox.Items.Add(chatUserControl.MessageTxtBox.Text);
-                                    File.WriteAllText(@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\Messages.txt", s);
+                                    File.WriteAllText(@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\Messages.txt", s);
                                 });
                             }
 
@@ -142,7 +158,7 @@ namespace project.ViewModels
                 {
                     if (message is Voice)
                     {
-                        Process.Start("d:\\mic.wav");
+                        Process.Start("C:\\mic.wav");
 
                     }
                     else if (message is PDF)

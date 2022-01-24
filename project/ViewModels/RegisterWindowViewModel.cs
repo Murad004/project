@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 
 namespace project.ViewModels
 {
@@ -21,16 +24,16 @@ namespace project.ViewModels
                 VerifyCodee = VerifyCode();
 
 
-                //string accountSid = "ACd7a8f894246b1a5ec31f2c19e95e2db7";
-                //string authToken = "beaecd89e5ef4b27fccfb168cf74b872";
+                string accountSid = "ACd7a8f894246b1a5ec31f2c19e95e2db7";
+                string authToken = "9cdb57aff5ce171148cd35f4781e966c";
 
-                //TwilioClient.Init(accountSid, authToken);
+                TwilioClient.Init(accountSid, authToken);
 
-                //var message = MessageResource.Create(
-                //    body: $"{VerifyCodee}",
-                //    from: new PhoneNumber("+16065179556"),
-                //    to: new PhoneNumber($"+994{registerPage.NumberTxtBox.Text}")
-                //);
+                var message = MessageResource.Create(
+                    body: $"{12121}",
+                    from: new PhoneNumber("+16065179556"),
+                    to: new PhoneNumber($"+994{registerPage.NumberTxtBox.Text}")
+                );
                 HelperClass.User = new Models.User();
                 HelperClass.User.PhoneNumber = $"+994{registerPage.NumberTxtBox.Text}";
 

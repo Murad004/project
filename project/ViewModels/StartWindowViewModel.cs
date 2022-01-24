@@ -22,10 +22,10 @@ namespace project.ViewModels
                 try
                 {
                     Users = new List<User>();
-                    if (File.Exists(@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\1.json"))
+                    if (File.Exists(@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\1.json"))
                     {
                         // Users.Add(JsonConvert.DeserializeObject<User>(File.ReadAllText(@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\1.json")));
-                        HelperClass.MainUser = JsonConvert.DeserializeObject<User>(File.ReadAllText(@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\1.json"));
+                        HelperClass.MainUser = JsonConvert.DeserializeObject<User>(File.ReadAllText(@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\1.json"));
                     }
                     RegisterPage registerPage = new RegisterPage();
                     startWindow.Close();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace project.Views
         public MultiFunctionUserControl()
         {
             InitializeComponent();
+            this.DataContext = new MultiFunctionUserControlViewModel(this);
         }
     }
 }

@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace project.ViewModels
 {
-    public class BaseViewModel : ICommand
+    public class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)

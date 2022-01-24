@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="StartWindow" Height="970" Width="650" WindowStartupLocation="CenterScreen">
     <Grid>
-        <StackPanel>
-            <Image Source="../Images/wp.png" Height="850"></Image>
-            <Button Command="{Binding AgreeAndContinueBtnCommand}" FontWeight="SemiBold" FontSize="19" Style="{StaticResource InformButton}" Width="500" Height="70" Content="Agree And Continue" Foreground="White"></Button>
+        <StackPanel Background="Gray">
+            <Image Stretch="Fill" Source="../Images/wpblack.png" Height="850"></Image>
+            <Button Command="{Binding AgreeAndContinueBtnCommand}" FontWeight="SemiBold" FontSize="19" Style="{StaticResource InformButton}" Width="500" Height="70" Content="Continue" Foreground="White"></Button>
         </StackPanel>
 
 

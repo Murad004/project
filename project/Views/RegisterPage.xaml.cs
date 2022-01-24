@@ -1,4 +1,6 @@
-﻿using System;
+﻿using project.Helpers;
+using project.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,8 @@ namespace project.Views
         public RegisterPage()
         {
             InitializeComponent();
+            HelperClass.register = this;
+            this.DataContext = new RegisterWindowViewModel(this);
         }
     }
 }

@@ -13,14 +13,14 @@
             <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
-            <WrapPanel Background="DarkGray">
+            <WrapPanel Background="White">
                 <Image Name="UserImg" Stretch="Fill" Margin="10,20,0,0" Width="50" Height="49"></Image>
                 <TextBlock x:Name="Username" Text="Username" Margin="30,20,0,0" FontSize="20"></TextBlock>
             </WrapPanel>
         </Grid>
 
         <Grid   Grid.Row="1">
-            <Image Stretch="Fill" Source="../Images/wpwalpaper.jpg"></Image>
+            <Image Stretch="Fill" Source="../Images/chback.png"></Image>
             <ListBox Foreground="White" Background="Transparent" AllowDrop="True" Drop="ChatListBox_Drop" DragEnter="ChatListBox_DragEnter"   SelectedItem="{Binding Message}"  Name="ChatListBox" >
 
                 <i1:Interaction.Triggers>
@@ -54,9 +54,6 @@
 
         <Grid Grid.Row="2" Name="Gridd">
             <WrapPanel>
-                <TextBox Margin="5,0,0,0" Name="MessageTxtBox" Height="50" Width="250" ></TextBox>
-                <Button Style="{StaticResource InformButton}" Command="{Binding SendBtnCommand}" Width="60" Content="Send"></Button>
-                <Button Style="{StaticResource InformButton}" Command="{Binding MultiFunctionallyButton}" Name="functionallyButton" Width="54" Content=". . ." FontSize="20"></Button>
                 <Button Command="{Binding VoiceRecordBtnCommand}"  Width="50"  Height="50" Content="Abcd">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
@@ -67,6 +64,9 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+                <TextBox Margin="5,0,0,0" Name="MessageTxtBox" Height="50" Width="250" ></TextBox>
+                <Button Style="{StaticResource InformButton}" Command="{Binding SendBtnCommand}" Width="60" Content="Send"></Button>
+                <Button Style="{StaticResource InformButton}" Command="{Binding MultiFunctionallyButton}" Name="functionallyButton" Width="54" Content=". . ." FontSize="20"></Button>
                 <!--<Button  Width="50"  Height="50" Content="Abcd">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">

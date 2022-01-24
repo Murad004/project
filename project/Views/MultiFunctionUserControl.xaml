@@ -6,53 +6,53 @@
              xmlns:local="clr-namespace:project.Views"
              mc:Ignorable="d" 
              d:DesignHeight="150" d:DesignWidth="460">
-    <Grid Background="White" >
+    <Grid Background="Black" >
         <WrapPanel>
             <StackPanel>
                 <Button Command="{Binding ImageBtnCommand}" Margin="20,0,0,0"  Width="50"  Height="50" Content="Abcd">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Grid>
-                                <Ellipse Fill="DarkGreen"/>
+                                <Ellipse Fill="SpringGreen"/>
                                 <Image Width="30" Height="30" Source="../Images/ImageIcon.png"></Image>
                             </Grid>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <TextBlock Margin="20,20,0,0" FontSize="15" Text="Image" HorizontalAlignment="Center">
+                <TextBlock Margin="20,20,0,0" FontSize="15" Text="Image" Foreground="White" HorizontalAlignment="Center">
 
                 </TextBlock>
 
             </StackPanel>
-            <StackPanel>
+            <StackPanel Margin="100,0,0,0">
 
                 <Button Command="{Binding LocationBtnCommand}" Margin="20,0,0,0"  Width="50"  Height="50" Content="Abcd">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Grid>
-                                <Ellipse Fill="DarkGreen"/>
+                                <Ellipse Fill="SpringGreen"/>
                                 <Image Width="30" Height="30" Source="../Images/Location.png"></Image>
                             </Grid>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <TextBlock Margin="20,20,0,0" FontSize="15" Text="Location" HorizontalAlignment="Center">
+                <TextBlock Margin="20,20,0,0" FontSize="15" Text="Location" Foreground="White" HorizontalAlignment="Center">
 
                 </TextBlock>
             </StackPanel>
-            <StackPanel>
+            <StackPanel Margin="100,0,0,0">
 
                 <Button Command="{Binding PdfBtnCommand}" Margin="20,0,0,0"  Width="50"  Height="50" Content="Abcd">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Grid>
-                                <Ellipse Fill="DarkGreen"/>
+                                <Ellipse Fill="SpringGreen"/>
                                 <Image Width="30" Height="30" Source="../Images/Pdf.png"></Image>
                             </Grid>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <TextBlock Margin="20,20,0,0" FontSize="15" Text="PDF" HorizontalAlignment="Center">
+                <TextBlock Margin="20,20,0,0" FontSize="15" Foreground="White" Text="PDF" HorizontalAlignment="Center">
 
                 </TextBlock>
             </StackPanel>

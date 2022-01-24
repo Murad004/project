@@ -30,8 +30,8 @@ namespace project.Helpers.ImageHelper
             //Image x = (Bitmap)((new ImageConverter()).ConvertFrom(buffer));
             Image x = (Bitmap)((new ImageConverter()).ConvertFrom(buffer));
             Image bitmap1 = new Bitmap(x);
-            bitmap1.Save($@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\image{counter}.png");
-            var imagepath = $@"C:\Users\mehsu\source\repos\WhatsAppDemo\WhatsAppDemo\bin\Debug\image{counter}.png";
+            bitmap1.Save($@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\image{counter}.png");
+            var imagepath = $@"C:\Users\Sadi_er59\source\repos\project\project\bin\Debug\image{counter}.png";
             return imagepath;
         }
         public static byte[] GetBytesOfImage(string path)

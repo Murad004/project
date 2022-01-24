@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,28 @@ namespace project.Views
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel(this);
         }
+
+        private void Listbox_Drop(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void Listbox_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Listbox_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void Listbox_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
     }
 }
